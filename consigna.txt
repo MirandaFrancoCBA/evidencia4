@@ -28,8 +28,7 @@ Clases:
     CortadoraVidrio (Probable)
     Figura(CortadoraVidrio)
 Atributos: 
-    ancho
-    alto
+    forma
     color(seleccion del color que tendra)
     frase(a grabar)
 
