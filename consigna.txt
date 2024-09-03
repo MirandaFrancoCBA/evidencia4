@@ -1,0 +1,35 @@
+Diseñar y desarrollar una clase en Python que represente un objeto con funcionalidad
+lógica, aplicando TDD, conceptos de POO y diseñando la base de datos correspondiente.
+
+1. Selección y Diseño del Objeto:
+    Maquina para cortar vidrio
+○ Define 3 comportamientos clave del objeto que involucren lógica de
+programación (no solo getters/setters).
+
+    *cortar (Corta la pieza de acuerdo a la figura elegida. Solo se puede realizar una figura por objeto)
+    *grabar (Graba en la pieza una cadena de caracteres como un codigo o un nombre)
+    *pintar (Pinta la pieza con un color elegido)
+
+Ejemplo para un vehículo:
+■ Acelerar: incrementa la velocidad de 10 en 10 km/h hasta un máximo.
+■ Frenar: disminuye la velocidad de 15 en 15 km/h hasta detenerse.
+■ Consumo de combustible: calcula el consumo basado en la velocidad
+y distancia.
+
+○ Incluye al menos un método estándar de definición def__. Ej. __str__(self),
+__len__(self),__add__(self, other), etc.
+
+2. Desarrollo guiado por pruebas (TDD):
+○ Escribe primero las pruebas unitarias.
+○ Implementa la clase para que pase las pruebas.
+○ Refactoriza en caso de ser necesario.
+
+Clases:
+    CortadoraVidrio (Probable)
+    Figura(CortadoraVidrio)
+Atributos: 
+    ancho
+    alto
+    color(seleccion del color que tendra)
+    frase(a grabar)
+
