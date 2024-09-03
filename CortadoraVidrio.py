@@ -5,6 +5,9 @@ class CortadoraVidrio:
         self._forma = forma
         self._color = color
         self._frase = frase
+        self.cortes = 0
+        self.grabados = 0
+        self.pintados = 0
 
 #Definiendo getters y setters
 
@@ -32,29 +35,28 @@ class CortadoraVidrio:
 #Metodos
 
     def cortar_figura(self, corte):
-        cortes = 0
-        if cortes == 0:
+        
+        if self.cortes == 0:
             self.forma = corte
-            cortes += 1
+            self.cortes += 1
         else:
             print("Solo un corte permitido.")
     
     def grabar(self, grabado):
-        self.frase = grabado
+        if self.grabados == 0:
+            self.frase = grabado
+            self.grabados += 1
+        else:
+            print("Solo un grabado permitido.")
 
     def pintar(self, pintura):
-        self.color = pintura
-
+        if self.pintados == 0:
+            self.color = pintura
+            self.pintados += 1
+        else:
+            print("Solo un color permitido.")
     
     def __str__(self):
         return f"Forma seleccionada: {self.forma}, Color: {self.color}, Frase: {self.frase}"
 
 
-coso1 = CortadoraVidrio()
-print(coso1)
-coso1.cortar_figura("Cuadrado")
-coso1.grabar("Hola")
-coso1.pintar("Azul")
-print(coso1)
-coso1.cortar_figura("Triangulo")
-print(coso1)
