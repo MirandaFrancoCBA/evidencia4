@@ -1,26 +1,20 @@
 
 #Creando la clase
 class CortadoraVidrio:
-    def __init__(self, ancho, alto, color, frase):
-        self._ancho = ancho
-        self._alto = alto
+    def __init__(self, forma = "Sin forma definida", color= "Transparente", frase="No elegida"):
+        self._forma = forma
         self._color = color
         self._frase = frase
+
 #Definiendo getters y setters
+
     @property
-    def ancho(self):
-        return self._ancho
-    @ancho.setter
-    def ancho(self, ancho):
-        self._ancho = ancho
-    
-    @property
-    def alto(self):
-        return self._alto
-    @alto.setter
-    def alto(self, alto):
-        self._alto = alto
-    
+    def forma(self):
+        return self._forma
+    @forma.setter
+    def forma(self, forma):
+        self._forma = forma
+
     @property
     def color(self):
         return self._color
@@ -35,16 +29,32 @@ class CortadoraVidrio:
     def frase(self, frase):
         self._frase = frase
 
-    def cortar_figura(self):
-        pass
+#Metodos
+
+    def cortar_figura(self, corte):
+        cortes = 0
+        if cortes == 0:
+            self.forma = corte
+            cortes += 1
+        else:
+            print("Solo un corte permitido.")
     
-    def grabar(self):
-        pass
-    
-    def pintar(self):
-        pass
+    def grabar(self, grabado):
+        self.frase = grabado
+
+    def pintar(self, pintura):
+        self.color = pintura
+
     
     def __str__(self):
-        return f"Color: {self._color}, Frase: {self._frase}"
+        return f"Forma seleccionada: {self.forma}, Color: {self.color}, Frase: {self.frase}"
 
 
+coso1 = CortadoraVidrio()
+print(coso1)
+coso1.cortar_figura("Cuadrado")
+coso1.grabar("Hola")
+coso1.pintar("Azul")
+print(coso1)
+coso1.cortar_figura("Triangulo")
+print(coso1)
