@@ -45,6 +45,6 @@ class CortadoraVidrio:
         pass
     
     def __str__(self):
-        pass
+        return f"Color: {self._color}, Frase: {self._frase}"
 
 
