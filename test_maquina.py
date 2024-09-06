@@ -35,7 +35,7 @@ print(pieza2)
 
 pieza3 = CortadoraVidrio()
 pieza3.cortar_figura("Circulo")
-pieza3.grabar("659135469")
+pieza3.grabar("CBA 2024")
 pieza3.pintar("Verde")
 print(pieza3) 
 

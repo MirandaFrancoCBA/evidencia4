@@ -10,5 +10,15 @@ CREATE TABLE cortes (
     frase VARCHAR(100) 
     );  
 
+INSERT INTO cortes (forma, color, frase) VALUES ('Cuadrado', 'Rojo', 'Hola Mundo');
+INSERT INTO cortes (forma, color, frase) VALUES ('Triangulo', 'Azul', 'Soy un triangulo');
+INSERT INTO cortes (forma, color, frase) VALUES ('Circulo', 'Verde', 'CBA 2024');
+INSERT INTO cortes (forma, color, frase) VALUES ('Rectangulo', 'Amarillo', 'Soy un rectangulo');
+INSERT INTO cortes (forma, color, frase) VALUES ('Rombo', 'Naranja', 'Soy un rombo');
+INSERT INTO cortes (forma, color, frase) VALUES ('Pentagono', 'Morado', 'CBA 2024');
+INSERT INTO cortes (forma, color, frase) VALUES ('Hexagono', 'Rosa', 'CBA 2024');
+INSERT INTO cortes (forma, color, frase) VALUES ('Cuadrado', 'Violeta', 'Soy un cuadrado');
+INSERT INTO cortes (forma, color, frase) VALUES ('Triangulo', 'Celeste', 'Soy un triangulo');
+INSERT INTO cortes (forma, color, frase) VALUES ('Circulo', 'Turquesa', 'CBA 2024');
 
 
