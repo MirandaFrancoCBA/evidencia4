@@ -1,6 +1,8 @@
 """De esta forma cree la tabla en workbench
  e hice los inserts y las consultas"""
 
+#Creacion de la base de datos y la tabla
+
 CREATE DATABASE maquina_cortavidrios
 USE maquina_cortavidrios
 CREATE TABLE cortes (  
@@ -10,6 +12,7 @@ CREATE TABLE cortes (
     frase VARCHAR(100) 
     );  
 
+#Inserts
 INSERT INTO cortes (forma, color, frase) VALUES ('Cuadrado', 'Rojo', 'Hola Mundo');
 INSERT INTO cortes (forma, color, frase) VALUES ('Triangulo', 'Azul', 'Soy un triangulo');
 INSERT INTO cortes (forma, color, frase) VALUES ('Circulo', 'Verde', 'CBA 2024');
@@ -20,5 +23,14 @@ INSERT INTO cortes (forma, color, frase) VALUES ('Hexagono', 'Rosa', 'CBA 2024')
 INSERT INTO cortes (forma, color, frase) VALUES ('Cuadrado', 'Violeta', 'Soy un cuadrado');
 INSERT INTO cortes (forma, color, frase) VALUES ('Triangulo', 'Celeste', 'Soy un triangulo');
 INSERT INTO cortes (forma, color, frase) VALUES ('Circulo', 'Turquesa', 'CBA 2024');
+
+#Consultas
+
+SELECT * FROM cortes;
+SELECT * FROM cortes WHERE forma = 'Cuadrado';
+SELECT * FROM cortes WHERE color = 'Rojo';
+SELECT * FROM cortes WHERE frase = 'CBA 2024';
+SELECT forma, color FROM cortes WHERE frase = 'CBA 2024';
+
 
 
