@@ -59,4 +59,3 @@ class CortadoraVidrio:
     def __str__(self):
         return f"Forma seleccionada: {self.forma}, Color: {self.color}, Frase: {self.frase}"
 
-
